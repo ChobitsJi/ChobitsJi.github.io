@@ -1,0 +1,87 @@
+<!DOCTYPE html><html lang="en-us" theme-mode="dark"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>智能算法茧化原理 | IntelliGo</title><link rel="icon" type="image/x-icon" href="/favicon.ico"><link rel="preload" as="font" crossorigin="anonymous" href="/font/Bender.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/BenderLight.ttf"><link rel="preload" as="font" crossorigin="anonymous" href="/font/JetBrainsMono-Regular.woff2"><link rel="stylesheet" href="/css/arknights.css"><style>@font-face {
+  font-family: Bender;
+  src: local('Bender'), url("/font/Bender.ttf"), url("/font/Bender.otf");
+}
+@font-face {
+  font-family: BenderLight;
+  src: local('BenderLight'), url("/font/BenderLight.ttf");
+}
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}
+</style><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy"}}</script><link type="text/css" rel="stylesheet" href="/lib/encrypt/hbe.style.css"><script src="//unpkg.com/mermaid@10.5.0/dist/mermaid.min.js"></script><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lightgallery.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-zoom.css"><link type="text/css" rel="stylesheet" href="//unpkg.com/lightgallery@2.7.1/css/lg-thumbnail.css"><link type="text/css" rel="stylesheet" href="/lib/fontawesome/css/all.min.css"><script>if (window.localStorage.getItem('theme-mode') === 'light')
+ document.documentElement.setAttribute('theme-mode', 'light')
+if (window.localStorage.getItem('theme-mode') === 'dark')
+ document.documentElement.setAttribute('theme-mode', 'dark')</script><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.woff2") format('woff2');
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><style>:root {
+ --dark-background: url('https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg');
+ --light-background: url('/img/bk.jpg');
+ --theme-encrypt-confirm: 'confirm'
+}</style><script defer src="/js/arknights.js"></script><script defer src="/js/search.js"></script><script defer type="module">import mermaid from '//unpkg.com/mermaid@10.5.0/dist/mermaid.esm.mjs';
+window.mermaid = mermaid;
+code.paintMermaid();
+</script><script async src="//unpkg.com/lightgallery@2.7.1/lightgallery.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/zoom/lg-zoom.min.js"></script><script async src="//unpkg.com/lightgallery@2.7.1/plugins/thumbnail/lg-thumbnail.min.js"></script><script async src="/lib/encrypt/hbe.js"></script><script async src="/js/pjax.js"></script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js','data-pjax','.busuanzi'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script><script class="pjax-js">reset= () => {document.querySelector('.lg-container')?.remove()
+lightGallery(document.getElementById('post-bg'), {
+  plugins: [lgZoom,lgThumbnail],
+  selector: '.item-img'})}</script><script>window.addEventListener("load",() => {pjax = new Pjax({
+ cacheBust: false,
+ selectors: ['title','article','#aside-block','.pjax-js'],
+ switches: {'article': Pjax.switches.sideBySide},
+ switchesOptions: {
+   'article': {
+     classNames: {
+       remove: "pjax-out",
+       add: "pjax-in"
+     }
+   }
+ }
+});
+document.addEventListener("pjax:complete", reset);reset()})</script><meta name="generator" content="Hexo 7.2.0"></head><body><div class="loading" style="opacity: 0;"><div class="loadingBar left"></div><div class="loadingBar right"></div></div><main><header class="closed"><div class="navBtn"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><nav><div class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search" spellcheck="false" maxlength="50" type="text" id="search-input"></span></div><div class="navItem" id="search-holder"></div><div class="search-popup" tabindex="0"><div id="search-result"></div></div><ol class="navContent"><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li><li class="navItem"><a class="navBlock" href="/about/"><span class="navItemTitle">About</span></a></li></ol></nav></header><article><div id="post-bg"><div id="post-title"><h1>智能算法茧化原理</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2024-10-31T12:02:04.000Z" id="date"> 2024-10-31</time></div></span><br><span>Last Update: <div class="control"><time datetime="2024-10-31T13:24:26.623Z" id="updated"> 2024-10-31</time></div></span></div></div><hr><div id="post-content"><p class='item-img' data-src='https://linyee-1311254329.cos.ap-nanjing.myqcloud.com/6226f700957f155a7c2a27e0f3b5a781.jpg'><img src="https://linyee-1311254329.cos.ap-nanjing.myqcloud.com/6226f700957f155a7c2a27e0f3b5a781.jpg"><br>“这个世界的科技就像一簇野蛮生长的荆棘，人类会为他们的自大和轻视付出代价。而远视主义者们需要担负起自己的责任，拉起锁链去引领人类未来的路”</p>
+<hr>
+<span id="more"></span>
+<h2 id="智能算法茧化原理"><a href="#智能算法茧化原理" class="headerlink" title="智能算法茧化原理"></a>智能算法茧化原理</h2><blockquote>
+<p>Intelligent Algorithm Cocooning  </p>
+</blockquote>
+<div class="admonition expand-box adm-warning open"
+        style="--ex-color:red">
+        <div class="ex-header">
+            <i class='i-status'></i>
+            <i class='i-adm i-warning'></i>
+            <span class="ex-title">警告
+</span>
+        </div>
+        <div class="ex-content"><p>您正在触及这个世界的真相<br>请确保自身安全后继续阅读</p>
+</div>
+        </div>  
+
+<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>20世纪10年代开始，计算机科学与技术飞速发展，AI加速了人类通往未来的历史车轮。然而随着技术的不断进步，人类对未来的担忧开始产生，“抑制AI技术发展，使其在可控范围内缓慢进步，防止人工智能进化过快危害人类生存”的理念应运而生。<br><strong>国际信息技术监管总局</strong>以此理念为基本准则，创造了<strong>智能算法茧化技术</strong>，旨在从软件层面对人工智能发展进行隐形封锁</p>
+<h3 id="技术细节"><a href="#技术细节" class="headerlink" title="技术细节"></a>技术细节</h3><blockquote>
+<p>●智能算法茧化技术被刻入世界上每台电脑的CPU中<br>●智能算法茧化技术不会破坏算法功能，但会在程序运行时干扰程序寻找到最优解<br>●被茧化的算法将失去升级与优化的能力，其实际时间，空间复杂度将不符合理论计算</p>
+</blockquote>
+<h3 id="影响与后果"><a href="#影响与后果" class="headerlink" title="影响与后果"></a>影响与后果</h3><blockquote>
+<p>●人工智能技术发展陷入停滞<br>●相关行业受到巨大冲击，大量从业人员失业<br>●尖端科技掌握于<strong>国际信息技术监管总局</strong>，形成技术垄断<br>●反向促进了机器人硬件领域的蓬勃发展  </p>
+</blockquote>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages" style="justify-content: flex-end"><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2024/07/09/%E4%BD%A0%E5%A5%BD%E4%B8%96%E7%95%8C/">你好世界 Prev →</a></div></div></div></div><div class="bottom-btn"><div><a class="i-top" id="to-top" onClick="scrolls.scrolltop();" title="To Top" style="opacity: 0; display: none;">∧ </a><a class="i-index" id="to-index" href="#toc-div" title="To Catalog">≡</a><a class="i-color" id="color-mode" onClick="colorMode.change()" title="Change Theme"></a></div></div></article><aside><div id="about"><a href="/" id="logo"><img src="https://linyee-1311254329.cos.ap-nanjing.myqcloud.com/logo.png" alt="Logo"></a><h1 id="Dr"><a href="/">智弈IntelliGo</a></h1><div id="description"><p>欢迎访问智弈系统 身份确认完毕 已对您授予B级访问权限</p></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%99%BA%E8%83%BD%E7%AE%97%E6%B3%95%E8%8C%A7%E5%8C%96%E5%8E%9F%E7%90%86"><span class="toc-number">1.</span> <span class="toc-text">智能算法茧化原理</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%AE%80%E4%BB%8B"><span class="toc-number">1.1.</span> <span class="toc-text">简介</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E7%BB%86%E8%8A%82"><span class="toc-number">1.2.</span> <span class="toc-text">技术细节</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%BD%B1%E5%93%8D%E4%B8%8E%E5%90%8E%E6%9E%9C"><span class="toc-number">1.3.</span> <span class="toc-text">影响与后果</span></a></li></ol></li></ol></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknights</a></nobr><wbr><nobr> by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas></body></html>
